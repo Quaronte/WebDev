@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-@import url("images/InnerTao4.png");
+@import url("Images/InnerTao4.png");
 
 @keyframes example {
     0% {background-color: red; background-position: 0px; top: -100px}
@@ -113,7 +113,7 @@ ul{
     flex-grow: 1; 
     width: 40%;
     margin-right: 50px;
-    background-image: url("images/InnerTao4.png");
+    background-image: url("Images/InnerTao4.png");
     background-size: 100%;
     border-radius: 12px;
     
