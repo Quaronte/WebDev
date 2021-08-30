@@ -18,6 +18,10 @@
   0% {opacity: 100%;}
   100% {opacity: 0%;}
 }
+@keyframes protRotation{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
 
 @keyframes innerTaoBackTransition{
   0% {background-image: url("images/InnerTao4.png");}
@@ -131,7 +135,8 @@ ul{
   width: 20%;
   margin-right: 50px;
   border-radius: 12px;
-  
+  animation: protRotation 30s infinite forwards;
+  animation-timing-function: linear;
 }
 /* IMAGES */
 
