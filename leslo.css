@@ -54,7 +54,7 @@
 .normalText {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    margin: 30px;
+
     margin-left : 100px;
     margin-right : 100px;
     font-weight: 300;
@@ -80,7 +80,6 @@
 }
 
 ul{
-    padding-bottom: 40px;
     padding-top: 15px;
 }
 
@@ -116,7 +115,7 @@ ul{
     flex-grow: 1; 
     width: 40%;
     margin-right: 50px;
-    background-image: url("Images/InnerTao4.png");
+    background-image: url("Images/InnerTao3.png");
     background-size: 100%;
     border-radius: 12px;
     
@@ -133,11 +132,27 @@ ul{
 .itemProt{
   flex-grow: 1; 
   width: 20%;
-  margin-right: 50px;
   border-radius: 12px;
   animation: protRotation 30s infinite forwards;
   animation-timing-function: linear;
+  padding : -5%;
+ 
 }
+
+body{
+  width: 100%; 
+  overflow-x: hidden
+}
+
+.Alephant{
+  background-image: url("Images/Alefondo.png");
+  background-size: 70%;
+  border-radius: 12px;
+  background-position: center;
+  color:aliceblue;
+  padding : 5%;
+}
+
 /* IMAGES */
 
   .innerTao{
