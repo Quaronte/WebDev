@@ -31,6 +31,9 @@
   100% {background-image: url("images/InnerTao4.png");}
 }
 
+.empty{
+  height: 100px;
+}
 
 .animation {
     background-color: red;
