@@ -4,34 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
-@keyframes example {
-    0% {background-color: red; background-position: 0px; top: -100px}
-    100% {background-color: yellow; background-position: -200px; top: 100px;}
-  }
-@keyframes example2 {
-    0% {background-color: red; left: 0px; top: -100px}
-    100% {background-color: yellow; left: 20px; top: 100px;}
-  }
-
-
-@keyframes innerTaoTransition{
-  0% {opacity: 100%;}
-  100% {opacity: 0%;}
-}
-@keyframes protRotation{
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
-}
-
-@keyframes innerTaoBackTransition{
-  0% {background-image: url("images/InnerTao4.png");}
-  25% {background-image: url("images/InnerTao5.png");}
-  50% {background-image: url("images/InnerTao2.png");}
-  75% {background-image: url("images/InnerTao3.png");}
-  100% {background-image: url("images/InnerTao4.png");}
-}
-
-
 html { 
   background: url("Images/Background01.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -51,26 +23,17 @@ html {
 
 .subsentence {
   font-family: 'Lora', sans-serif;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 700;
   text-align: center;
   color:aliceblue;
   text-shadow: 0px 4px #404040;
-  padding-bottom: 100px;
-}
-
-.credits {
-  font-family: 'Lora', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color:aliceblue;
-  text-shadow: 0px 4px #404040;
-  padding: 50px;
+  padding-bottom: 50px;
+  padding-top: -20px;
 }
 
 .content{
-  width: 80%;
+  width: 100%;
   height:auto;
   position: relative;
   box-sizing: border-box;
@@ -79,9 +42,8 @@ html {
 
 .video{
   position: relative;
-  padding-bottom: 56.25%;
-  max-width: 640px;
-  max-height:360px;
+  padding-top: 28.125%;
+  width: 50%;
   margin: auto;
 }
 
@@ -94,51 +56,34 @@ html {
 }
 
 .button{
-  width: 5% auto;
   max-width: 10%;
   color: #ffffff;
   transition: opacity 0.2s, width 0.2s, margin 0.2s;
   opacity: 100%;
   transform: rotate(0.1);
-  margin: 0.25%;
   float:left;
 }
 .button:hover{
-  width: 5.5% auto;
-  max-width: 10.5%;
-  color: #aaaaaa;
-  transition: opacity 0.2s, width 0.2s, margin 0.2s;
   opacity: 80%;
-  transform: rotate(0.15);
-  margin:0%;
-  float:left;
 }
 
 .buttonright{
-  width: 5% auto;
   max-width: 10%;
   color: #ffffff;
   transition: opacity 0.2s, width 0.2s, margin 0.2s;
   opacity: 100%;
   transform: rotate(0.1);
-  margin: 0.25%;
   float:right;
+  padding-bottom: 10%;
 }
 .buttonright:hover{
-  width: 5.5% auto;
-  max-width: 10.5%;
-  color: #aaaaaa;
-  transition: opacity 0.2s, width 0.2s, margin 0.2s;
   opacity: 80%;
-  transform: rotate(0.15);
-  margin:0%;
-  float:right;
 }
 
 /* define image */
 .AlephantLogo{
   max-width: 100%;
-  max-height: 90%;
+  max-height: 10%;
   /* position: fixed;
   top: 20%;
   left: 0%; */
@@ -151,201 +96,41 @@ html {
   width: 70%;
 }
 
-.empty{
-  height: 100px;
-}
-
-.animation {
-    background-color: red;
-    /*animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;*/
-    position: relative;
-    animation: example 2s infinite alternate;
-}
-
-
-
-
-
-.listText {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin: 30px;
-    margin-left : 20px;
-    margin-right : 20px;
-    margin-bottom : 20px; 
-    font-weight: 300;
-}
-.list {
-    list-style-type: disc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin-right : 50px;
-    margin-left : 50px;
-    margin-bottom: 30px;
-}
-
-ul{
-    padding-top: 15px;
-}
-
-
-
-  
-  /* Flex container */
-  .container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
- .itemLeft{
-     flex-grow: 1; 
-     width: 60%;
-     margin-right: 40px;
-     text-align: end;
-     padding-bottom: 20px;
- }
- 
- .itemRight{
-    flex-grow: 1; 
-    width: 60%;
-    margin-right: 40px;
-    text-align: start;
-    padding-bottom: 20px;
-}
-
- .itemImageInnerTao{
-    flex-grow: 1; 
-    width: 40%;
-    margin-right: 50px;
-    background-image: url("Images/InnerTao3.png");
-    background-size: 100%;
-    border-radius: 12px;
-    
-}
-
- .itemImage{
-    flex-grow: 1; 
-    width: 40%;
-    margin-right: 50px;
-    border-radius: 12px;
-    
-}
-
-.itemProt{
-  flex-grow: 1; 
-  width: 20%;
-  border-radius: 12px;
-  animation: protRotation 30s infinite forwards;
-  animation-timing-function: linear;
-  padding : -5%;
- 
-}
-
-body{
-  width: 100%; 
-  overflow-x: hidden
-}
-
-.Alephant{
-  background-image: url("Images/Alefondo.png");
-  background-size: 70%;
-  border-radius: 12px;
-  background-position: center;
+.releaseDate {
+  font-family: 'Lora', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
   color:aliceblue;
-  padding : 5%;
+  text-shadow: 0px 4px #404040;
+  padding-bottom: 2%;
+  padding-top: 4%;
 }
 
-/* IMAGES */
-
-  .innerTao{
-    width: 100%;
-    height : 100%;
-    border-radius: 12px;
-    margin-bottom: -5px;
-    animation: innerTaoTransition 6s infinite alternate;
-    animation-delay : 4s;
-    animation-timing-function: ease-in-out;
-  }
-
-  .puzzlescript{
-    width: 100%;
-    height : 100%;
-    border-radius: 12px;
-    margin-bottom: -5px;
-  }
-
-  .gamejams{
-    border-radius: 8px;
-    width: 140%;
-    border: 0px solid #3d5c3d;
-    border-radius: 4px;
-  }
-  
-
-
-
-  /*                                      DESIGN CHOICES                                      */
-
-    /* Flex container */
-    .containerJam{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: stretch;
-    }
-
-  /* define flex items */
-  .itemJamGame{
-    flex-grow:1;
-    flex-shrink:1;
-    margin: 10px;
-    width: 25%;
-  }
-
-  span.JamGameName {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+.credits {
+  font-family: 'Lora', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color:aliceblue;
+  text-shadow: 0px 4px #404040;
+  padding-bottom: 4%;
 }
 
-  /* define image */
-  .stellarea{
-    width: 100%;
-    border-radius: 12px;
-
-  }
-
-  .stellarea:hover{
-    border-radius: 24px;
-    color: #3fff3f;
-    width: 100%;
-  }
-
-  .linkTest:hover + div.divTest{
-    display: block;
-  }
-
-  .divTest{
-    position: absolute;
-      width: 17.2%;
-      display: none;
-      background-color: rgb(199, 219, 236);
-      border-radius: 25px;
-      padding: 30px;
-      position: 30px;
-  }
-
-  .divTest:hover{
-    width: 17.2%;
-    display: block;
+.presskitButton {
+  font-family: 'Lora', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 20%;
+  text-align: center;
+  color:#121212;
+  text-shadow: 0px 2px #808080;
+  margin: auto;
+  border-radius: 10px;
+  background: #E4C464;
+  text-decoration: none;
 }
 
-
+.presskitButton:hover {
+  background:#aaaaaa;
+}
